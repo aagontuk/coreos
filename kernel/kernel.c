@@ -1,6 +1,7 @@
-void main(){
-    char *video_memory = (char *) 0xb8000;
+#include "../drivers/screen.h"
 
-    /* display X */
-    *video_memory = 'X';
+void main(){
+    clear_screen();
+    print("hello, world");
 }
+
